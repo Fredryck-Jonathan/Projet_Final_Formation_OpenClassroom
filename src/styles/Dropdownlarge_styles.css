@@ -1,0 +1,77 @@
+.dropdown{
+
+    width: 86%;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.dropdown_close{
+
+display: flex;
+background: #FF6060;
+border-radius: 5px;
+align-items: baseline;
+justify-content: space-between;
+padding: 5px 10px 5px 10px;
+
+z-index: 200;
+
+}
+
+
+
+.dropdown_close h5{
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 142.6%;
+    /* or 34px */
+    
+    display: flex;
+    align-items: center;
+    
+    color: #FFFFFF;
+    margin: 0;
+
+}
+
+.dropdown_close svg{
+
+cursor: pointer;
+border-radius: 0px;
+
+
+
+}
+
+
+.dropdown_open{
+
+    background: #F7F7F7;
+    border-radius: 5px;
+    padding: 1%;
+    margin-top: -5px;
+
+    z-index: 100;
+
+}
+
+.dropdown_open p {
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 142.6%;
+    /* or 34px */
+    
+    
+    color: #FF6060;
+
+
+}
