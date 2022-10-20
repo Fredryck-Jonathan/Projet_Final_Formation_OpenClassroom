@@ -1,0 +1,12 @@
+#section_accordion{
+
+display: flex;
+flex-direction: row;
+margin: auto;
+width: 86%;
+gap: 60px;
+
+align-items: flex-start;
+
+}
+

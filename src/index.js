@@ -17,7 +17,7 @@ const root = createRoot(container)
                 <Routes>
                     <Route path="/" exact element={<Home/>} />
                     <Route path="/a-propos/" exact element={<A_PROPOS/>} />
-                    <Route path="/fiche-logement/:id" exact element={<FicheLogement/>} />
+                    <Route path="/fiche-logement/:id/" element={<FicheLogement/>} />
                     <Route path="*" exact element={<Error/>} />
                 </Routes>
 

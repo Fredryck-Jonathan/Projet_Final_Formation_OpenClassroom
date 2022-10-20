@@ -3,14 +3,16 @@
 .accordion-item{
 
     width: 86%;
-    margin: auto;
-
-    display: flex;
-    flex-direction: column;
-    
 
 }
 
+.accordion{
+
+display: flex;    
+display: flex;
+flex-direction: column;
+
+}
 .accordion-title{
 
 display: flex;

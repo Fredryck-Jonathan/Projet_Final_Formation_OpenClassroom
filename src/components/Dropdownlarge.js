@@ -16,17 +16,18 @@ function Dropdownlarge(props) {
 
     useEffect(() => {
     
-        const accordion = document.getElementsByClassName('accordion-item')[0]
-        location.pathname === '/a-propos' ? accordion.style.width = '86%' : accordion.style.width = '48%'
-    
+   
+        for (let accordion of document.getElementsByClassName('accordion-item')) {
+            location.pathname === '/a-propos' ? accordion.style.width = '86%' : accordion.style.width = '74%'
+        }
     })
 
 
     return (
         
-        < div className="accordion" >
+        < div className="accordion-item" >
 
-            <div className="accordion-item">
+            <div className="accordion">
                 <div className="accordion-title" onClick={() => setIsActive(!isActive)}>
                     <h5>{props.title}</h5>
                     <div>{isActive ? '-' : '+'}</div>
