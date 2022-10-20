@@ -15,10 +15,10 @@ const root = createRoot(container)
             <Router>
 
                 <Routes>
-                    <Route path="/" element={<Home/>} />
-                    <Route path="/a-propos/" element={<A_PROPOS/>} />
-                    <Route path="/fiche-logement/:idLogement" element={<FicheLogement/>} />
-                    <Route path="*" element={<Error/>} />
+                    <Route path="/" exact element={<Home/>} />
+                    <Route path="/a-propos/" exact element={<A_PROPOS/>} />
+                    <Route path="/fiche-logement/:id" exact element={<FicheLogement/>} />
+                    <Route path="*" exact element={<Error/>} />
                 </Routes>
 
         </Router>

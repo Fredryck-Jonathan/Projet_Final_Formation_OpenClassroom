@@ -1,5 +1,6 @@
 import Header from '../components/Header'
 import Footer from '../components/Footer'
+import Dropdownlarge from '../components/Dropdownlarge'
 
 function Logement() {
     return (
@@ -9,7 +10,7 @@ function Logement() {
             </div>
 
             <div id='body'>
-                
+                <Dropdownlarge></Dropdownlarge>
 
             </div>
 

@@ -23,10 +23,10 @@ function A_Propos() {
                     <div id='img_background_propos'></div>
                 </section>
                 <div id='dropdown_gallery'>
-                    <Dropdownlarge title='Fiabilité' text={text_fiabilité}></Dropdownlarge>
-                    <Dropdownlarge title='Respect' text={text_respect}></Dropdownlarge>
-                    <Dropdownlarge title='Service' text={text_service}></Dropdownlarge>
-                    <Dropdownlarge title='Sécurité' text={text_sécurité}></Dropdownlarge>
+                    <Dropdownlarge title='Fiabilité' content={text_fiabilité}></Dropdownlarge>
+                    <Dropdownlarge title='Respect' content={text_respect}></Dropdownlarge>
+                    <Dropdownlarge title='Service' content={text_service}></Dropdownlarge>
+                    <Dropdownlarge title='Sécurité' content={text_sécurité}></Dropdownlarge>
                 </div>
             </div>
 

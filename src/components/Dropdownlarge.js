@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from "react";
-import '../styles/Dropdownlarge_styles.css'
+import React, { useEffect, useState } from "react";
+import '../styles/Dropdownlarge_styles.css';
+import { useLocation } from "react-router-dom"
 
 import PropTypes from 'prop-types';
 
@@ -7,38 +8,37 @@ import PropTypes from 'prop-types';
 
 
 
+
 function Dropdownlarge(props) {
+
+    const [isActive, setIsActive] = useState(false);
+    let location = useLocation();
+
+    useEffect(() => {
     
-    let [DropdownLargeState_Open, setDropdownLargeState] = useState(true)
-
-    let toggleDropdownlarge = () => {
-
-        setDropdownLargeState(DropdownLargeState_Open === true ? false : true)
-
-    }
+        const accordion = document.getElementsByClassName('accordion-item')[0]
+        location.pathname === '/a-propos' ? accordion.style.width = '86%' : accordion.style.width = '48%'
     
-
+    })
 
 
     return (
         
-        <div className="dropdown">
+        < div className="accordion" >
 
-            
-            <div onClick={() => toggleDropdownlarge()}  className="dropdown_close">
-                <h5 className="title_dropdown">{props.title}</h5>
-                <svg  id="icon_dropdown" width="18" height="16" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path  d="M1.3705 0.761357L0.0120851 2.13059L7.61002 9.73828L15.208 2.1229L13.8495 0.761357L7.61002 7.0152L1.3705 0.761357V0.761357Z" fill="white"/>
-                </svg>
-            </div>
-
-                <div className="dropdown_open hide" >
-                    <p>{props.text}</p>
+            <div className="accordion-item">
+                <div className="accordion-title" onClick={() => setIsActive(!isActive)}>
+                    <h5>{props.title}</h5>
+                    <div>{isActive ? '-' : '+'}</div>
                 </div>
+        
+                {isActive && <div className="accordion-content">
+                    <p>{props.content}</p>
+                </div>}
+        
+            </div>
+        </div >
 
-
-
-        </div>
 
     )
         
@@ -51,7 +51,7 @@ function Dropdownlarge(props) {
 Dropdownlarge.prototype = {
 
     title: PropTypes.string,
-    text: PropTypes.string,
+    content: PropTypes.string,
     
 
 

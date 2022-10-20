@@ -1,14 +1,17 @@
-.dropdown{
+
+
+.accordion-item{
 
     width: 86%;
     margin: auto;
 
     display: flex;
     flex-direction: column;
+    
 
 }
 
-.dropdown_close{
+.accordion-title{
 
 display: flex;
 background: #FF6060;
@@ -17,13 +20,15 @@ align-items: baseline;
 justify-content: space-between;
 padding: 5px 10px 5px 10px;
 
-z-index: 200;
+z-index: 400;
+
+cursor: pointer;
 
 }
 
 
 
-.dropdown_close h5{
+.accordion-title h5{
 
     font-family: 'Montserrat';
     font-style: normal;
@@ -50,18 +55,18 @@ border-radius: 0px;
 }
 
 
-.dropdown_open{
+.accordion-content{
 
     background: #F7F7F7;
     border-radius: 5px;
     padding: 1%;
     margin-top: -5px;
-
+    display: block;
     z-index: 100;
 
 }
 
-.dropdown_open p {
+.accordion-content p {
 
     font-family: 'Montserrat';
     font-style: normal;
