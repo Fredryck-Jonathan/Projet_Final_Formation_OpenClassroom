@@ -85,19 +85,9 @@ function Logement() {
                             <img src={data_id.host.picture} alt="auteur de l'annonce" />
                         </div>
                         <div id='rate'>
-                            <div id='rate_red'>
 
                                 <Rate rating={data_id.rating}></Rate>
 
-                            </div>
-                            
-                            <div id='rate_grey'>
-                            <span className="material-icons_rate_grey">star</span>
-                                <span className="material-icons_rate_grey">star</span>
-                                <span className="material-icons_rate_grey">star</span>
-                                <span className="material-icons_rate_grey">star</span>
-                                <span className="material-icons_rate_grey">star</span>
-                            </div>
                         </div>
 
                     </div>

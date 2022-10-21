@@ -10,7 +10,7 @@
     word-wrap: normal;
     white-space: nowrap;
     direction: ltr;
-    color: #FFFFFF;
+    color: red;
   /* Support for all WebKit browsers. */
   -webkit-font-smoothing: antialiased;
   /* Support for Safari and Chrome. */
@@ -46,4 +46,17 @@
 
   /* Support for IE. */
   font-feature-settings: 'liga';
+}
+
+
+#rate_div{
+
+  position: relative;
+
+}
+
+#rate_red{
+
+position: absolute;
+
 }
