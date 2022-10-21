@@ -1,6 +1,7 @@
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import { Carousel, CarouselItem }   from "../components/Carousel"
+import { Carousel, CarouselItem } from "../components/Carousel"
+import Rate from "../components/rate"
 
 import Dropdownlarge from '../components/Dropdownlarge';
 import { stockData } from "../data.js";
@@ -34,6 +35,8 @@ function Logement() {
         }
         return equipements
     }
+
+
 
     let equipement_item = equipement()
     console.log(equipement_item, data_id.equipments, data_id.pictures)
@@ -80,6 +83,21 @@ function Logement() {
                         <div id='info_auteur'>
                             <h6>{data_id.host.name}</h6>
                             <img src={data_id.host.picture} alt="auteur de l'annonce" />
+                        </div>
+                        <div id='rate'>
+                            <div id='rate_red'>
+
+                                <Rate rating={data_id.rating}></Rate>
+
+                            </div>
+                            
+                            <div id='rate_grey'>
+                            <span className="material-icons_rate_grey">star</span>
+                                <span className="material-icons_rate_grey">star</span>
+                                <span className="material-icons_rate_grey">star</span>
+                                <span className="material-icons_rate_grey">star</span>
+                                <span className="material-icons_rate_grey">star</span>
+                            </div>
                         </div>
 
                     </div>
