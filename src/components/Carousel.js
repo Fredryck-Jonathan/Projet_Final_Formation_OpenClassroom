@@ -29,8 +29,10 @@ export function Carousel({ children }) {
         }
 
         setActiveIndex(newIndex)
+  
     }
 
+    let count = React.Children.count(children);
 
 
     return (
@@ -41,16 +43,20 @@ export function Carousel({ children }) {
                 })}
             </div>
             <div className="indicators">
-                <button onClick={() => {
+                <span onClick={() => {
                     updateIndex(activeIndex - 1);
-                }}>
-                    Prev
-                </button>
-                <button onClick={() => {
+                }} className="material-icons_carousel">
+                    chevron_left
+                </span>
+                <span onClick={() => {
                     updateIndex(activeIndex + 1);
-                }}>
-                   Next 
-                </button>
+                }}className="material-icons_carousel">
+                   chevron_right
+                </span>
+            </div>
+            <div className="number_carousel">
+                <span>{activeIndex + 1}/ { count}</span>
+
             </div>
         </div>
     )

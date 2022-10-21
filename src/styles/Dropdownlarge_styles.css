@@ -1,4 +1,27 @@
+.material-icons_expand{
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 26px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    color: #FFFFFF;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
 
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
 
 .accordion-item{
 
@@ -20,7 +43,7 @@ flex-direction: column;
 display: flex;
 background: #FF6060;
 border-radius: 5px;
-align-items: baseline;
+align-items: center;
 justify-content: space-between;
 padding: 5px 10px 5px 10px;
 
@@ -48,16 +71,6 @@ cursor: pointer;
     margin: 0;
 
 }
-
-.dropdown_close svg{
-
-cursor: pointer;
-border-radius: 0px;
-
-
-
-}
-
 
 .accordion-content{
 
