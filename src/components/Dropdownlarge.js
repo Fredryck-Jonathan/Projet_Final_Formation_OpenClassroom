@@ -18,7 +18,7 @@ function Dropdownlarge(props) {
     
    
         for (let accordion of document.getElementsByClassName('accordion-item')) {
-            location.pathname === '/a-propos' ? accordion.style.width = '86%' : accordion.style.width = '74%'
+            location.pathname === '/a-propos' ? accordion.style.width = '86%' : accordion.style.width = '74%';
         }
     })
 

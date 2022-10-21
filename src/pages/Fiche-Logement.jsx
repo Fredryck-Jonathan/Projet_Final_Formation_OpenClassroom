@@ -1,9 +1,13 @@
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import { Carousel, CarouselItem }   from "../components/Carousel"
+
 import Dropdownlarge from '../components/Dropdownlarge';
 import { stockData } from "../data.js";
 import { useParams } from "react-router-dom";
 import '../styles/fiche_logement_styles.css';
+
+import Tag from '../components/Tag';
 
 function Logement() {
 
@@ -32,7 +36,7 @@ function Logement() {
     }
 
     let equipement_item = equipement()
-    console.log(equipement_item, data_id.equipments)
+    console.log(equipement_item, data_id.equipments, data_id.pictures)
     
 
     return (
@@ -41,14 +45,51 @@ function Logement() {
                 <Header/>
             </div>
 
-            <div id='body'>
-                <div className='carrousel_div'></div>
+            <div id='body_fiche_logement'>
+                <div className='carrousel_div'>
+                    <Carousel>
+                        {data_id.pictures.map((picture) => (
 
+                            <CarouselItem picture={picture} key={picture} />
+
+                            
+
+                        ))}
+                    </Carousel>
+
+                </div>
+
+                <div id='deuxieme_section'>
+                    <div id='flex_left'>
+                        <div id='flex_left_text'>
+                            <h6>{data_id.title}</h6>
+                            <p>{data_id.location}</p>
+                        </div>
+                        <div id='tags'>
+                        {data_id.tags.map((tag) => (
+
+                            <Tag key={tag} title={tag}  />
+    
+                        ))}
+
+                        </div>
+                        
+                        
+                    </div>
+                    <div id='flex_right'>
+                        <div id='info_auteur'>
+                            <h6>{data_id.host.name}</h6>
+                            <img src={data_id.host.picture} alt="auteur de l'annonce" />
+                        </div>
+
+                    </div>
+
+                </div>
   
                 
                 <div id='section_accordion'>
                     <Dropdownlarge title='Description' content={data_id.description}></Dropdownlarge>
-                    <Dropdownlarge title ='Equipements' content={equipement_item}></Dropdownlarge>
+                    <Dropdownlarge title ='Equipements' content={equipement_item }></Dropdownlarge>
 
                 </div>
 

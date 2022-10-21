@@ -1,3 +1,118 @@
+#body_fiche_logement{
+
+display: flex;
+flex-direction: column;
+gap: 50px;
+
+}
+
+#deuxieme_section{
+
+width: 86%;
+display: flex;
+justify-content: space-between;
+margin: auto;
+align-items: flex-start;
+
+
+}
+
+#flex_left{
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+#flex_left h6{
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 142.6%;
+    /* or 51px */
+    
+    display: flex;
+    align-items: flex-end;
+    
+    color: #FF6060;
+    margin: 0;
+
+
+}
+
+#deuxieme_section p {
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 142.6%;
+    /* identical to box height, or 26px */
+
+    margin: 0;
+
+    
+    color: #FF6060;
+
+}
+
+#tags{
+
+display: flex;
+gap: 20px;
+
+}
+
+#flex_right{
+
+display: flex;
+flex-direction: column;
+
+}
+
+#info_auteur{
+
+display: flex;
+flex-direction: row;
+gap: 15px;
+align-items: center;
+
+}
+
+#info_auteur h6{
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 142.6%;
+    /* or 26px */
+    
+    display: flex;
+    align-items: flex-end;
+    text-align: right;
+    
+    color: #FF6060;
+    width: 93px;
+    margin: 0;
+
+}
+
+#info_auteur img{
+
+height: 64px;
+width: 64px;
+border-radius: 50px;
+object-fit: cover;
+}
+
+
+
+
+
 #section_accordion{
 
 display: flex;

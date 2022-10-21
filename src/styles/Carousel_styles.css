@@ -1,0 +1,52 @@
+.carousel {
+position: relative;
+overflow: hidden;
+border-radius: 25px;
+width: 86%;
+margin: auto;
+display: flex;
+flex-direction: column;
+height: 450px;
+}
+
+
+.inner{
+
+white-space: nowrap;
+transition: transform 0.3s;
+height: 450px;
+
+
+}
+
+.carousel-item{
+
+display: inline-flex;
+align-items: center;
+justify-content:center;
+height: 450px;
+background: green;
+color: azure;
+background-size: cover;
+
+
+
+}
+
+.indicators {
+    display: flex;
+    justify-content:space-between;
+
+margin-top: -225px;
+
+
+
+z-index: 100;
+
+}
+
+.indicators > button {
+
+margin: 5px;
+
+}

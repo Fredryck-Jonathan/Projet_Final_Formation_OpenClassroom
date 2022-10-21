@@ -13,7 +13,7 @@ function Tag(props) {
 
 
                   
-                <div className="tag_div">
+                <div className="tag_div" key={props.title}>
                       
                     <h5 className="tag_title">{props.title}</h5>
                           
