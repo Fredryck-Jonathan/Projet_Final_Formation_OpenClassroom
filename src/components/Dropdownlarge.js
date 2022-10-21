@@ -30,7 +30,7 @@ function Dropdownlarge(props) {
             <div className="accordion">
                 <div className="accordion-title" onClick={() => setIsActive(!isActive)}>
                     <h5>{props.title}</h5>
-                    <div>{isActive ? <span className="material-icons_expand">expand_more</span> : <span className="material-icons_expand">expand_less</span>}</div>
+                    <div>{isActive ? <span className="material-icons_expand">expand_less</span> : <span className="material-icons_expand">expand_more</span>}</div>
                 </div>
         
                 {isActive && <div className="accordion-content">

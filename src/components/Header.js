@@ -1,7 +1,7 @@
 /*Import des libraries utiliser*/
 import React, { useEffect, useState } from "react";
 import styled from 'styled-components'
-import { useLocation } from "react-router-dom"
+import { NavLink, useLocation } from "react-router-dom"
 
 /*Import des styles externes*/
 import '../styles/Header_styles.css';
@@ -38,6 +38,7 @@ text-decoration: underline;
 
 color: #FF6060;
 `
+
 
 
 
@@ -79,6 +80,11 @@ let LinkPropos = linkState === 'Propos' ? styled.a`${style_underline}` : styled.
 
             <nav>
                 <LinkAccueil href="/">Accueil</LinkAccueil>
+                
+                <NavLink to='/' activeStyle={{ textDecoration: 'underline' }}>
+                    Accueil
+                </NavLink>
+
                 <LinkPropos href="/a-propos">A PROPOS</LinkPropos>
             </nav>
             

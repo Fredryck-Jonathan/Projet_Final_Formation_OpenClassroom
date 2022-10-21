@@ -4,7 +4,7 @@ import { Carousel, CarouselItem } from "../components/Carousel"
 import Rate from "../components/rate"
 
 import Dropdownlarge from '../components/Dropdownlarge';
-import { stockData } from "../data.js";
+import { stockData } from "../data/Kasa.js";
 import { useParams } from "react-router-dom";
 import '../styles/fiche_logement_styles.css';
 

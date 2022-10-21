@@ -8,7 +8,7 @@ import Thumb from '../components/Thumb'
 
 
 import React from "react";
-import { stockData } from "../data.js";
+import { stockData } from "../data/Kasa.js";
 
 
 function Home() {
