@@ -23,3 +23,17 @@
     margin: 3px 15px 3px 15px;
 
 }
+
+@media screen and (max-width: 750px){
+
+    .tag_div{
+
+    
+        height: 25px;
+
+
+    }
+
+
+}
+

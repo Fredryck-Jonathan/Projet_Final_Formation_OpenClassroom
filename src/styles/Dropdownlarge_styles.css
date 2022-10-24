@@ -98,3 +98,46 @@ cursor: pointer;
 
 
 }
+
+
+
+@media screen and (max-width: 750px){
+
+.accordion-item .accordion{
+
+width: 100%;
+margin: auto;
+
+}
+
+
+.accordion-title{
+
+height: 30px;
+width: 100%;
+margin: auto;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

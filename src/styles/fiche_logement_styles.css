@@ -1,29 +1,3 @@
-.material-icons_rate_grey{
-    font-family: 'Material Icons';
-    font-weight: normal;
-    font-style: normal;
-    font-size: 26px;  /* Preferred icon size */
-    display: inline-block;
-    line-height: 1;
-    text-transform: none;
-    letter-spacing: normal;
-    word-wrap: normal;
-    white-space: nowrap;
-    direction: ltr;
-    color: #E3E3E3;
-  /* Support for all WebKit browsers. */
-  -webkit-font-smoothing: antialiased;
-  /* Support for Safari and Chrome. */
-  text-rendering: optimizeLegibility;
-
-  /* Support for Firefox. */
-  -moz-osx-font-smoothing: grayscale;
-
-  /* Support for IE. */
-  font-feature-settings: 'liga';
-}
-
-
 #body_fiche_logement{
 
 display: flex;
@@ -151,6 +125,70 @@ width: 86%;
 gap: 60px;
 
 align-items: flex-start;
+
+}
+
+@media screen and (max-width: 750px){
+
+#body_fiche_logement{
+
+
+
+}
+
+
+
+#deuxieme_section{
+
+
+flex-direction: column;
+
+}
+
+#flex_right{
+
+    width: 100%;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+
+    }
+
+    #info_auteur{
+
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        align-items: center;
+        
+        
+    }
+    
+    #info_auteur img{
+
+            height: 32px;
+            width: 32px;
+            border-radius: 50px;
+            object-fit: cover;
+            
+    }
+
+
+    #info_auteur h6{
+
+        font-size: 12px;
+        justify-content: flex-end;
+        white-space: pre-wrap;
+        
+        
+        }
+
+    #section_accordion{
+
+        flex-direction: column;
+        width: 90%;
+
+    }
+
 
 }
 

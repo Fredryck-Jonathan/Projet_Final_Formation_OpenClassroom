@@ -32,12 +32,15 @@ margin-top: 56px;
     /* or 26px */
     
     display: flex;
-    align-items: flex-end;
+
+    white-space: pre-wrap;
 
     
     color: #FFFFFF;
 
     z-index: 100;
+    
+
 }
 
 .div_img{
@@ -68,3 +71,37 @@ margin-top: 56px;
     
     
     }
+
+
+    @media screen and (max-width: 600px){
+
+
+        .card_div{
+
+            height: 255px;
+            width: 100%;
+            margin-top: 25px;
+            
+            }
+            
+
+            .card_div h5{
+
+
+                top: 73.73%;
+                text-align: left;
+                
+
+                
+            
+            }
+
+
+
+
+
+
+
+
+    }
+

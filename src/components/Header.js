@@ -9,34 +9,15 @@ import '../styles/Header_styles.css';
 /*Initialisation des inline-styles*/ 
 const style_none = `
 
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 500;
-font-size: 24px;
-line-height: 142.6%;
-/* or 34px */
-
-margin: auto;
-white-space: nowrap;
 text-decoration: none;
 
-color: #FF6060;
 `
 
 const style_underline = `
 
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 500;
-font-size: 24px;
-line-height: 142.6%;
-/* or 34px */
-
-margin: auto;
-white-space: nowrap;
 text-decoration: underline;
 
-color: #FF6060;
+
 `
 
 
@@ -80,11 +61,6 @@ let LinkPropos = linkState === 'Propos' ? styled.a`${style_underline}` : styled.
 
             <nav>
                 <LinkAccueil href="/">Accueil</LinkAccueil>
-                
-                <NavLink to='/' activeStyle={{ textDecoration: 'underline' }}>
-                    Accueil
-                </NavLink>
-
                 <LinkPropos href="/a-propos">A PROPOS</LinkPropos>
             </nav>
             

@@ -22,7 +22,7 @@ function A_Propos() {
 
                     {aboutData.map((about) => (
 
-                        <Dropdownlarge title={about.title} content={about.content}></Dropdownlarge>
+                        <Dropdownlarge title={about.title} content={about.content} key={about.title}></Dropdownlarge>
 
                     ))}
                 </div>
