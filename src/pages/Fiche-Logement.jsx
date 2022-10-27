@@ -1,6 +1,6 @@
 
 import { Carousel, CarouselItem } from "../components/Carousel"
-import Rate from "../components/rate"
+import Rate from "../components/Rate"
 
 import Dropdownlarge from '../components/Dropdownlarge';
 import { stockData } from "../data/Kasa.js";

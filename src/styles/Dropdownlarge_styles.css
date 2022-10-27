@@ -80,6 +80,8 @@ cursor: pointer;
     margin-top: -5px;
     display: block;
     z-index: 100;
+    padding: auto;
+    height: auto;
 
 
 }
@@ -126,12 +128,13 @@ cursor: pointer;
 
         background: #F7F7F7;
         border-radius: 5px;
-        padding: 1%;
+
 
         width: 95%;
         margin: auto;
         margin-top: -5px;
-    
+
+
     
 }
 
