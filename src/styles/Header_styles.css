@@ -27,6 +27,13 @@ nav{
 
 }
 
+#logo{
+
+
+    width: 210px;
+
+}
+
 a{
 
 
@@ -88,6 +95,16 @@ a{
         
         color: #FF6060;
         
+    }
+
+
+
+    #logo{
+
+
+
+        width: 145px;
+
     }
 
 

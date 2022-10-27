@@ -97,3 +97,54 @@ line-height: 142.6%;
 color: #FFFFFF;
 
 }
+
+@media screen and (max-width: 750px){
+
+
+.material-icons_carousel{
+
+
+font-size: 35px;
+
+}
+
+.carousel{
+
+
+height: 255px;
+
+}
+
+.inner{
+
+
+height: 255px;
+
+}
+
+.carousel-item{
+
+
+height: 255px;
+
+}
+
+
+.indicators {
+
+
+margin-top: -150px;
+
+
+}
+
+
+
+.number_carousel{
+
+display: none;
+
+}
+
+
+}

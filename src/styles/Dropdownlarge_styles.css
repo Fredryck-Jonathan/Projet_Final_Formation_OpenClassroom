@@ -99,9 +99,43 @@ cursor: pointer;
 
 }
 
+.accordion-about{
+
+    width: 86%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+
+.accordion-details{
+
+    width: 86%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
 
 
 @media screen and (max-width: 750px){
+
+
+.accordion-content{
+
+        background: #F7F7F7;
+        border-radius: 5px;
+        padding: 1%;
+
+        width: 95%;
+        margin: auto;
+        margin-top: -5px;
+    
+    
+}
+
+
 
 .accordion-item .accordion{
 
@@ -120,19 +154,50 @@ margin: auto;
 
 }
 
+.accordion-details , .accordion-about{
+
+width: 95%;
+
+
+}
+
+.accordion-details .accordion-title, .accordion-about .accordion-title{
+
+    width: 95%;
+
+    padding: 0px 5px 0px 5px;
+
+}
 
 
 
 
 
 
+.accordion-content p {
+
+
+    font-size: 12px;
+
+
+}
 
 
 
+.accordion-title h5{
+
+
+    font-size: 13px;
+
+}
 
 
 
+.material-icons_expand{
 
+    font-size: 15px;
+
+}
 
 
 

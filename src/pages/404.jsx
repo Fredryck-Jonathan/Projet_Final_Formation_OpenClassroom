@@ -1,15 +1,12 @@
 import { Link } from 'react-router-dom'
-import Header from '../components/Header'
-import Footer from '../components/Footer'
+
 
 import '../styles/404_styles.css'
 
 function Erreur() {
     return (
         <div id='page' >
-            <div id='header'>
-                <Header/>
-            </div>
+
 
             <div id='body_404'>
                 <h3>404</h3>
@@ -18,9 +15,6 @@ function Erreur() {
 
             </div>
 
-            <div id='footer'>
-                <Footer/>
-            </div>
         </div>
     )
 }

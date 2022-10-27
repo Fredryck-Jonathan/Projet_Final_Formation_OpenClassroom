@@ -130,6 +130,12 @@ align-items: flex-start;
 
 @media screen and (max-width: 750px){
 
+#body_fiche_logement{
+
+
+gap: 20px;
+        
+        }
 
 
 
@@ -138,8 +144,40 @@ align-items: flex-start;
 
 
 flex-direction: column;
+gap: 10px;
 
 }
+
+#deuxieme_section p {
+
+font-size: 14px;
+
+
+}
+
+#flex_left{
+
+gap: 10px;
+
+}
+
+#flex_left_text{
+
+    gap: 7px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+#flex_left h6{
+
+font-size: 18px;
+
+}
+
+
+
 
 #flex_right{
 
@@ -149,6 +187,8 @@ flex-direction: column;
 
 
     }
+
+
 
     #info_auteur{
 
@@ -175,6 +215,7 @@ flex-direction: column;
         font-size: 12px;
         justify-content: flex-end;
         white-space: pre-wrap;
+        width: 50px;
         
         
         }
@@ -183,6 +224,7 @@ flex-direction: column;
 
         flex-direction: column;
         width: 90%;
+        gap: 20px;
 
     }
 

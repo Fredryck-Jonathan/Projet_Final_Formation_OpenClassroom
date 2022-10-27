@@ -63,3 +63,39 @@
     color: #FF6060;
 
 }
+
+
+@media screen and (max-width: 750px){
+
+
+    #body_404 h3{
+
+
+
+        font-size: 96px;
+
+
+    }
+
+
+
+    #body_404 h5{
+
+
+
+        font-size: 18px;
+
+
+    }
+
+    #link_404{
+
+
+
+        font-size: 14px;  
+
+
+    }
+
+
+}

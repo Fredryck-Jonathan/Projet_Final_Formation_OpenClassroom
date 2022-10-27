@@ -2,12 +2,11 @@
 import '../styles/Home_styles.css'
 
 /*Composant*/ 
-import Header from '../components/Header'
-import Footer from '../components/Footer'
 import Thumb from '../components/Thumb'
 
 
 import React from "react";
+
 import { stockData } from "../data/Kasa.js";
 
 

@@ -1,5 +1,4 @@
-import Header from '../components/Header'
-import Footer from '../components/Footer'
+
 import '../styles/A_Propos_styles.css'
 import Dropdownlarge from '../components/Dropdownlarge'
 
