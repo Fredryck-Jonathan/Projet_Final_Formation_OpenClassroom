@@ -39,13 +39,14 @@ a{
     
     margin: auto;
     white-space: nowrap;
-    text-decoration: none;
+
     
     color: #FF6060;
 
 
 
 }
+
 
 
 
@@ -68,7 +69,7 @@ a{
     }
 
 
-    a{
+    .NavLink{
 
 
 

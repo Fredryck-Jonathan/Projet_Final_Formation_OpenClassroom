@@ -15,11 +15,14 @@ function Thumb(props) {
                   
                   <Link className="card_div" to={"/fiche-logement/"+ props.id} key={ props.id}>
                       
-                    <h5>{props.title}</h5>
+            <div className="title_div">
+              <h5>{props.title}</h5>
+              </div>
                       
                     <div className="div_img">
                           
-                        <div className="mask_img"></div>
+                <div className="mask_img"></div>
+              
                         <img src={props.cover} alt={props.description}></img>
                           
                     </div>
@@ -34,7 +37,7 @@ function Thumb(props) {
           );
         };
     
-Thumb.prototype = {
+Thumb.propTypes = {
 
   id: PropTypes.string,
   title: PropTypes.string,

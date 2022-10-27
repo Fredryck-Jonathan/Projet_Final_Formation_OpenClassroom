@@ -1,20 +1,4 @@
-body{
 
-margin: 0;
-padding: 0;
-
-
-}
-
-
-
-
-#root{
-
-width: 100%;
-height: 100%;
-
-}
 
 
 #page{
@@ -142,7 +126,7 @@ color: #FFFFFF;
     background: #F7F7F7;
     border-radius: 25px;
     justify-content: center;
-    gap: 5%;
+    gap: 0px;
     padding-bottom: 56px;
    
 
@@ -200,6 +184,8 @@ color: #FFFFFF;
 
         height: 111px;
         border-radius: 10px;
+
+        background-position: center;
 
             
             

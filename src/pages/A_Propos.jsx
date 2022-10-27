@@ -8,9 +8,7 @@ import { aboutData} from "../data/about.js"
 function A_Propos() {
     return (
         <div id='page' >
-            <div id='header'>
-                <Header/>
-            </div>
+
 
             <div id='body_propos'>
                 <section id='section_Propos'>
@@ -28,9 +26,6 @@ function A_Propos() {
                 </div>
             </div>
 
-            <div id='footer'>
-                <Footer/>
-            </div>
         </div>
     )
 }

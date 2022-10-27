@@ -8,22 +8,28 @@ width: 340px;
 
 overflow: hidden;
 position: relative;
-background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+background: linear-gradient(180deg, rgba(221, 103, 103, 1) 0%, rgba(129, 50, 50, 1) 100%);
 border-radius: 10px;
 margin-top: 56px;
 
+display: flex;
+flex-direction: column-reverse;
+
+text-decoration: none;
 }
+
+.title_div{
+
+height: 100px;
+
+
+}
+
 
 .card_div h5{
 
-    margin: 0;
+    margin: 10px;
 
-    position: absolute;
-    left: 5.88%;
-    right: 5.88%;
-    top: 78.82%;
-    bottom: 5.88%;
-    
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
@@ -38,7 +44,9 @@ margin-top: 56px;
     
     color: #FFFFFF;
 
+
     z-index: 100;
+    text-decoration: none;
     
 
 }
@@ -73,28 +81,28 @@ margin-top: 56px;
     }
 
 
-    @media screen and (max-width: 600px){
+@media screen and (max-width: 750px){
 
 
-        .card_div{
+    .card_div{
 
-            height: 255px;
-            width: 100%;
-            margin-top: 25px;
+        height: 255px;
+        width: 100%;
+        margin-top: 25px;
             
-            }
+        }
             
 
-            .card_div h5{
+    .card_div h5{
 
 
-                top: 73.73%;
-                text-align: left;
+        top: 73.73%;
+        text-align: left;
                 
 
                 
             
-            }
+    }
 
 
 

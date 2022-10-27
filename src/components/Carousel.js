@@ -39,27 +39,37 @@ export function Carousel({ children }) {
         <div className="carousel">
             <div className="inner" style={{ transform: `translateX(-${activeIndex * 100}%` }}>
                 {React.Children.map(children, (child, index) => {
-                    return React.cloneElement(child, {width:"100%"})
+                    return React.cloneElement(child, { width: "100%" })
                 })}
             </div>
-            <div className="indicators">
-                <span onClick={() => {
-                    updateIndex(activeIndex - 1);
-                }} className="material-icons_carousel">
-                    chevron_left
-                </span>
-                <span onClick={() => {
-                    updateIndex(activeIndex + 1);
-                }}className="material-icons_carousel">
-                   chevron_right
-                </span>
-            </div>
-            <div className="number_carousel">
-                <span>{activeIndex + 1}/ { count}</span>
 
-            </div>
+
+            {count > 1 && 
+            <>
+                <div className="indicators">
+                    <span onClick={() => {
+                        updateIndex(activeIndex - 1);
+                    }} className="material-icons_carousel">
+                        chevron_left
+                    </span>
+
+                    <span onClick={() => {
+                    updateIndex(activeIndex + 1);
+                        }}className="material-icons_carousel">
+                    chevron_right
+                    </span>
+                </div>
+                
+                <div className="number_carousel">
+                    <span>{activeIndex + 1}/ { count}</span>
+
+                </div>
+            </>
+            }
         </div>
+            
     )
+
 
 }
 

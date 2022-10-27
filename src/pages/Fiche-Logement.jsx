@@ -44,9 +44,7 @@ function Logement() {
 
     return (
         <div id='page' >
-            <div id='header'>
-                <Header/>
-            </div>
+
 
             <div id='body_fiche_logement'>
                 <div className='carrousel_div'>
@@ -103,9 +101,6 @@ function Logement() {
 
             </div>
 
-            <div id='footer'>
-                <Footer/>
-            </div>
         </div>
     )
 }

@@ -14,9 +14,7 @@ import { stockData } from "../data/Kasa.js";
 function Home() {
     return (
         <div id='page' >
-            <div id='header'>
-                <Header/>
-            </div>
+
 
             <section id='sectionPresentation'>
                 <h4 id='texte_sectionPresentation'>Chez vous, partout et ailleurs</h4>
@@ -40,9 +38,7 @@ function Home() {
 
             </div>
 
-            <div id='footer'>
-                <Footer/>
-            </div>
+
         </div>
     )
 }
