@@ -1,6 +1,7 @@
+/*ajout de link de react router */
 import { Link } from 'react-router-dom'
 
-
+/*ajout du style css */
 import '../styles/404_styles.css'
 
 function Erreur() {

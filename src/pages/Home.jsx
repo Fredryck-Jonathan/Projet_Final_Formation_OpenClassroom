@@ -4,9 +4,10 @@ import '../styles/Home_styles.css'
 /*Composant*/ 
 import Thumb from '../components/Thumb'
 
-
+/*ajout de react*/
 import React from "react";
 
+/*ajout du tableau de la base de données */
 import { stockData } from "../data/Kasa.js";
 
 

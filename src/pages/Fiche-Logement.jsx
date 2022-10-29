@@ -1,13 +1,21 @@
 
+/**ajout des composants */
 import { Carousel, CarouselItem } from "../components/Carousel"
 import Rate from "../components/Rate"
-
 import Dropdownlarge from '../components/Dropdownlarge';
+import Tag from '../components/Tag';
+
+
+/**ajout du tableau de la base de données */
 import { stockData } from "../data/Kasa.js";
+
+/*Ajout de use params*/
 import { useParams } from "react-router-dom";
+
+/* ajout du style css*/
 import '../styles/fiche_logement_styles.css';
 
-import Tag from '../components/Tag';
+
 
 function Logement() {
 

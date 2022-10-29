@@ -1,7 +1,11 @@
 
+/*ajout du style css*/
 import '../styles/A_Propos_styles.css'
+
+/* ajout du composant*/
 import Dropdownlarge from '../components/Dropdownlarge'
 
+/*ajout du tableau d'objet de la base de données*/
 import { aboutData} from "../data/about.js"
 
 function A_Propos() {
