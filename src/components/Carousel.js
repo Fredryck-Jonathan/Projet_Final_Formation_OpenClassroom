@@ -74,7 +74,7 @@ export function Carousel({ children }) {
 }
 
 
-CarouselItem.prototype = {
+CarouselItem.propTypes = {
 
 
     picture: PropTypes.string,

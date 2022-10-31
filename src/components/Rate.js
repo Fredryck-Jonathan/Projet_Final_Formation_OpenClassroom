@@ -1,6 +1,6 @@
 import '../styles/rate_styles.css'
 
-
+import PropTypes from 'prop-types';
 
 
 function rate(props) {
@@ -40,5 +40,13 @@ function rate(props) {
     )
 
 }
+
+rate.propTypes = {
+
+    rating: PropTypes.number
+
+}
+
+
 
 export default rate

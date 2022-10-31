@@ -23,7 +23,7 @@ function Tag(props) {
           );
         };
     
-Tag.prototype = {
+Tag.propTypes = {
 
   title: PropTypes.string,
 

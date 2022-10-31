@@ -23,7 +23,7 @@
   font-feature-settings: 'liga';
 }
 
-.accordion-item{
+.accordion{
 
     width: 86%;
     margin-left: auto;
@@ -106,8 +106,11 @@ cursor: pointer;
     width: 86%;
     margin-left: auto;
     margin-right: auto;
-
+    display: flex;
+    flex-direction: column;
 }
+
+
 
 
 
@@ -116,9 +119,25 @@ cursor: pointer;
     width: 86%;
     margin-left: auto;
     margin-right: auto;
+    display: flex;
+    flex-direction: column;
 
 }
 
+.accordion-details h5{
+
+
+    font-size: 18px;
+
+}
+
+.accordion-details p {
+
+
+    font-size: 18px;
+
+
+}
 
 
 @media screen and (max-width: 750px){
@@ -140,7 +159,7 @@ cursor: pointer;
 
 
 
-.accordion-item .accordion{
+.accordion{
 
 width: 100%;
 margin: auto;

@@ -17,7 +17,7 @@ function Dropdownlarge(props) {
     useEffect(() => {
     
    
-        for (let accordion of document.getElementsByClassName('accordion-item')) {
+        for (let accordion of document.getElementsByClassName('accordion')) {
             location.pathname === '/a-propos' ? accordion.className = 'accordion-about' : accordion.className = 'accordion-details';
         }
     })
@@ -25,7 +25,7 @@ function Dropdownlarge(props) {
 
     return (
         
-        < div className="accordion-item" >
+
 
             <div className="accordion">
                 <div className="accordion-title" onClick={() => setIsActive(!isActive)}>
@@ -38,7 +38,7 @@ function Dropdownlarge(props) {
                 </div>}
         
             </div>
-        </div >
+
 
 
     )
@@ -49,7 +49,7 @@ function Dropdownlarge(props) {
 
 }
 
-Dropdownlarge.prototype = {
+Dropdownlarge.propTypes = {
 
     title: PropTypes.string,
     content: PropTypes.string,
