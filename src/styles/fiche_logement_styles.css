@@ -124,7 +124,7 @@ margin: auto;
 width: 86%;
 gap: 60px;
 
-align-items: flex-start;
+align-items: stretch;
 
 }
 

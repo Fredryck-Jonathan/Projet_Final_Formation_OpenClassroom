@@ -82,6 +82,7 @@ cursor: pointer;
     z-index: 100;
     padding: auto;
     height: auto;
+    flex: 1;
 
 
 }
@@ -121,6 +122,8 @@ cursor: pointer;
     margin-right: auto;
     display: flex;
     flex-direction: column;
+    align-items: stretch;
+    padding: auto;
 
 }
 
