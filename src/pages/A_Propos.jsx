@@ -14,11 +14,13 @@ function A_Propos() {
 
 
             <div id='body_propos'>
+
                 <section id='section_Propos'>
                     <div id='img_mask_propos'></div>
                     <div id='img_url_propos'></div>
                     <div id='img_background_propos'></div>
                 </section>
+
                 <div id='dropdown_gallery'>
 
                     {aboutData.map((about) => (

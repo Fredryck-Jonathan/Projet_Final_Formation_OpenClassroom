@@ -47,6 +47,7 @@ export function Carousel({ children }) {
             {count > 1 && 
             <>
                 <div className="indicators">
+
                     <span onClick={() => {
                         updateIndex(activeIndex - 1);
                     }} className="material-icons_carousel">
@@ -78,6 +79,6 @@ CarouselItem.propTypes = {
 
 
     picture: PropTypes.string,
-  
-  
-  }
+
+
+}

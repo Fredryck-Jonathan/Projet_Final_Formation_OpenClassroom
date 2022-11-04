@@ -16,7 +16,7 @@ function Header() {
 
             <div className='logo'>
 
-                <img id="logo" src={require("../assets/logo.png")} alt="logo"/>
+                <img id="logo" src="logo.png" alt="logo"/>
 
             </div>
 

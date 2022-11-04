@@ -13,9 +13,9 @@ const root = createRoot(container)
     root.render(
         <React.StrictMode>
             <Router>
-            <Header/>
-            <App/>
-            <Footer/>
+                <Header/>
+                <App/>
+                <Footer/>
             </Router>
         </React.StrictMode>,
 )

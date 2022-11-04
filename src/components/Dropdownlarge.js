@@ -15,11 +15,13 @@ function Dropdownlarge(props) {
     let location = useLocation();
 
     useEffect(() => {
-    
-   
+
         for (let accordion of document.getElementsByClassName('accordion')) {
+
             location.pathname === '/a-propos' ? accordion.className = 'accordion-about' : accordion.className = 'accordion-details';
+
         }
+
     })
 
 
@@ -27,15 +29,20 @@ function Dropdownlarge(props) {
         
 
 
-            <div className="accordion">
-                <div className="accordion-title" onClick={() => setIsActive(!isActive)}>
+        <div className="accordion">
+            
+            <div className="accordion-title" onClick={() => setIsActive(!isActive)}>
+                
                     <h5>{props.title}</h5>
                     <div>{isActive ? <span className="material-icons_expand">expand_less</span> : <span className="material-icons_expand">expand_more</span>}</div>
-                </div>
+
+            </div>
         
-                {isActive && <div className="accordion-content">
-                    <p>{props.content}</p>
-                </div>}
+            {isActive && <div className="accordion-content">
+                    
+                <p>{props.content}</p>
+
+            </div>}
         
             </div>
 

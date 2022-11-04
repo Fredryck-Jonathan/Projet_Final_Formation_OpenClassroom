@@ -10,11 +10,14 @@ function rate(props) {
 
 
     function createElements(n, className_star){
-            var elements = [];
-            for (let i = 0; i < n; i++) {
-                elements.push(<span key={i} className={className_star}>star</span>);
-            }
-            return elements;
+            
+        var elements = [];
+
+        for (let i = 0; i < n; i++) {
+            elements.push(<span key={i} className={className_star}>star</span>);
+        }
+
+        return elements;
     }
     
     const className_star_red =  'material-icons_rate_red'  ;
@@ -25,25 +28,28 @@ function rate(props) {
 
     return (
         <div id='rate_div'>
+            
             <div id='rate_red'>
 
-            {rate_star_red}
+                {rate_star_red}
 
-        </div>
+            </div>
 
-        <div id='rate_grey'>
-            {rate_star_grey}
-        </div>
+            <div id='rate_grey'>
+
+                {rate_star_grey}
+
+            </div>
 
       
-        </div>
+    </div>
     )
 
 }
 
 rate.propTypes = {
 
-    rating: PropTypes.number
+    rating: PropTypes.string
 
 }
 
