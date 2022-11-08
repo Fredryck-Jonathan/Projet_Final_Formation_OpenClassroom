@@ -1,6 +1,6 @@
 
 /**ajout des composants */
-import { Carousel, CarouselItem } from "../components/Carousel"
+import Carousel from "../components/Carousel"
 import Rate from "../components/Rate"
 import Dropdownlarge from '../components/Dropdownlarge';
 import Tag from '../components/Tag';
@@ -10,14 +10,24 @@ import Tag from '../components/Tag';
 import { stockData } from "../data/Kasa.js";
 
 /*Ajout de use params*/
-import { useParams } from "react-router-dom";
+import {useParams, Navigate } from "react-router-dom";
 
 /* ajout du style css*/
 import '../styles/fiche_logement_styles.css';
 
 
 
+
+
+
+
+
 function Logement() {
+    
+
+
+
+      
 
     let { id } = useParams();
 
@@ -25,13 +35,34 @@ function Logement() {
 
         return urlID.id === id;
 
+
     };
+
 
     let data_id = stockData.find(foundDetails)
 
-    console.log()
+
+
+
+    if (data_id === undefined) {
+    
+            
+        return <Navigate to="*"/>
+
+
+    }
+
+
+
+
+
+
+
+
+    console.log(data_id)
 
     function equipement() {
+
 
         let equipements = ""
 
@@ -60,15 +91,7 @@ function Logement() {
 
                 <div className='carrousel_div'>
 
-                    <Carousel>
-
-                        {data_id.pictures.map((picture) => (
-
-                            <CarouselItem picture={picture} key={picture} />
-
-                        ))}
-
-                    </Carousel>
+                    <Carousel pictures={data_id.pictures}></Carousel>
 
                 </div>
 

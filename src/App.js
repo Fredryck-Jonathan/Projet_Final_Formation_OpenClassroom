@@ -28,7 +28,7 @@ const App = () => {
             path: '*',
             element: <Error />,
         }
-      
+ 
     ]);
     return routes;
     

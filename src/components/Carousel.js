@@ -1,84 +1,71 @@
-import React, { useState } from "react"
-import PropTypes from 'prop-types';
+import React, { useState} from "react"
 
 import '../styles/Carousel_styles.css'
 
-export function CarouselItem(props ,{ children }) {
-    
-console.log(props.picture)
-    return (
+const Carousel = (props) => {
+    const data = props.pictures
+    console.log(data)
+    const [currentIndex, setCurrentIndex] = useState(0)
 
-        <div className='carousel-item' key={props.picture} style={{ width: '100%', backgroundImage: `url(${props.picture})` }}> 
-            {children}
-        </div>
-
-
-    )
-}
-
-
-export function Carousel({ children }) {
-
-    const [activeIndex, setActiveIndex] = useState(0);
 
     const updateIndex = (newIndex) => {
         if (newIndex < 0) {
-            newIndex = React.Children.count(children) - 1;
-        } else if (newIndex >= React.Children.count(children)) {
+            newIndex = data.length - 1;
+        } else if (newIndex >= data.length) {
             newIndex = 0;
         }
 
-        setActiveIndex(newIndex)
+        setCurrentIndex(newIndex)
   
     }
 
-    let count = React.Children.count(children);
+    
 
 
+
+
+    
+    
+    
     return (
-        <div className="carousel">
-            <div className="inner" style={{ transform: `translateX(-${activeIndex * 100}%` }}>
-                {React.Children.map(children, (child, index) => {
-                    return React.cloneElement(child, { width: "100%" })
-                })}
-            </div>
+        <div className="carousel-container">
+            {data.map((item, index) => {
+                return <img className="carousel-item"
+                    style={{ transform: `translate(-${currentIndex * 100}%)` }}
+                    key={index} alt='representation habitat' src={item}></img>})
 
-
-            {count > 1 && 
-            <>
-                <div className="indicators">
-
-                    <span onClick={() => {
-                        updateIndex(activeIndex - 1);
-                    }} className="material-icons_carousel">
-                        chevron_left
-                    </span>
-
-                    <span onClick={() => {
-                    updateIndex(activeIndex + 1);
-                        }}className="material-icons_carousel">
-                    chevron_right
-                    </span>
-                </div>
                 
-                <div className="number_carousel">
-                    <span>{activeIndex + 1}/ { count}</span>
+            }
+            
 
-                </div>
-            </>
+
+
+
+            {data.length > 1 &&
+                <>
+                    <div className="indicators">
+
+                        <span onClick={() => {
+                            updateIndex(currentIndex - 1);
+                        }} className="material-icons_carousel">
+                            chevron_left
+                        </span>
+
+                        <span onClick={() => {
+                            updateIndex(currentIndex + 1);
+                        }} className="material-icons_carousel">
+                            chevron_right
+                        </span>
+                    </div>
+                
+                    <div className="number_carousel">
+                        <span>{currentIndex + 1}/ {data.length}</span>
+
+                    </div>
+                </>
             }
         </div>
-            
     )
-
-
 }
 
-
-CarouselItem.propTypes = {
-
-
-    picture: PropTypes.string,
-
-
-}
+export default Carousel

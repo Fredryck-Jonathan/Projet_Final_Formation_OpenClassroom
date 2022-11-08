@@ -25,49 +25,42 @@
 }
 
 
-.carousel {
-position: relative;
-overflow: hidden;
-border-radius: 25px;
-width: 86%;
+.carousel-container {
+width: 85%;
 margin: auto;
 display: flex;
-flex-direction: column;
-height: 450px;
+flex-direction: row;
+flex-wrap: nowrap;
+overflow: hidden;
+height: 415px;
+border-radius: 25px;
+position: relative;
 }
 
-
-.inner{
-
-white-space: nowrap;
-transition: transform 0.3s;
-height: 450px;
-
-
-}
 
 .carousel-item{
 
-display: inline-flex;
-align-items: center;
-justify-content:center;
-height: 450px;
-background: green;
-color: azure;
-background-size: cover;
-background-position: center;
 
+min-width: 100%;
+width: 100%;
+display: flex;
 
+transition: 1s cubic-bezier(0.39,0.575,0.565,1);
+object-fit: cover;
+object-position: center;
 
 }
 
+
+
 .indicators {
-    display: flex;
-    justify-content:space-between;
+display: flex;
 
-margin-top: -275px;
+margin-top: 150px;
+gap: 930px;
 
 
+position: absolute;
 
 z-index: 100;
 
@@ -108,19 +101,15 @@ font-size: 35px;
 
 }
 
-.carousel{
+.carousel-container{
 
 
 height: 255px;
 
 }
 
-.inner{
 
 
-height: 255px;
-
-}
 
 .carousel-item{
 
